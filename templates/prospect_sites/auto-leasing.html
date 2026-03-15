@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Business Name] | Auto Leasing in [City]</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --surface: #141b23;
+        --text: #f5f7fa;
+        --muted: #a8b3c2;
+        --accent: #4ec3ff;
+        --line: #243242;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(78, 195, 255, 0.15), transparent 30%),
+          linear-gradient(180deg, #091018 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+      .hero, .section { padding: 72px 0; }
+      .hero-grid, .grid { display: grid; gap: 24px; }
+      .hero-grid { grid-template-columns: 1.15fr 1fr; align-items: center; }
+      .grid.three { grid-template-columns: repeat(3, 1fr); }
+      .card {
+        background: rgba(20, 27, 35, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 24px;
+      }
+      .visual {
+        min-height: 360px;
+        border-radius: 28px;
+        background:
+          linear-gradient(145deg, rgba(78,195,255,0.35), transparent),
+          linear-gradient(135deg, #17212e, #0d1117);
+        border: 1px solid var(--line);
+      }
+      .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; }
+      .cta {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        color: #07131c;
+        background: var(--accent);
+        font-weight: 700;
+      }
+      .muted { color: var(--muted); }
+
+      @media (max-width: 800px) {
+        .hero-grid, .grid.three { grid-template-columns: 1fr; }
+        .hero, .section { padding: 48px 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Lease Smarter in [City]</div>
+          <h1>[Business Name]</h1>
+          <p class="muted">
+            Fast, transparent lease deals for drivers who want better options without
+            wasting time at the dealership.
+          </p>
+          <p><a class="cta" href="#contact">Request a Quote</a></p>
+        </div>
+        <div class="visual"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="grid three">
+          <div class="card">
+            <h3>New Lease Offers</h3>
+            <p class="muted">Highlight monthly specials and featured makes or models.</p>
+          </div>
+          <div class="card">
+            <h3>Trade-In Guidance</h3>
+            <p class="muted">Help clients understand equity, payoff, and swap options.</p>
+          </div>
+          <div class="card">
+            <h3>Business Fleet Support</h3>
+            <p class="muted">Position the business for repeat commercial leasing deals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="card">
+          <h2>Simple 3-Step Process</h2>
+          <p class="muted">Tell us what you want. Review options. Drive away with the right lease.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="card">
+          <h2>Get Your Lease Quote</h2>
+          <p class="muted">
+            Call [Phone Number] or email [Email Address]. This draft can be upgraded into
+            a full lead-generation site with inventory pages, quote forms, and CRM-ready intake.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>
